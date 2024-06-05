@@ -12,7 +12,7 @@ In order to use this wrapper library you will need to provide credentials to acc
 
 You will either need an access token for the shop you are trying to access (if using a [public application](https://help.shopify.com/api/getting-started/authentication#public-applications)) or an API Key and Secret for a [private application](https://help.shopify.com/api/getting-started/authentication#private-applications).
 
-## Examples
+## Code Examples
 
 #### Make an API call
 ```php
@@ -36,8 +36,8 @@ $result = $shopify->call('POST', 'admin/products.json', [
         "title"        => "Kerastase Shampoo 150ml",
         "body_html"    => "<strong>Good shampoo for hair!</strong>",
         "vendor"       => "Kerastase",
-        "product_type" => "Snowboard",
-        "tags"         => 'Shampoo, Kerastas, "Hair Care"',
+        "product_type" => "Shampoo",
+        "tags"         => 'Shampoo, Kerastase, "Hair Care"',
     ],
 ]);
 ```

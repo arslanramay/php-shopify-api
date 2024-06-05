@@ -8,18 +8,20 @@ use arslanramay\ShopifyPHP\Shopify;
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+// =====================================
+//          API Credentials
+// =====================================
 // Define shop domain, API key, and secret
 $shop_domain       = $_ENV['SHOP_DOMAIN'];
 $shop_access_token = $_ENV['SHOP_ACCESS_TOKEN'];
 $shop_api_version  = $_ENV['SHOP_API_VERSION'];
 
-echo "<pre>";
 // var_dump($_ENV);
 // var_dump($shop_access_token);
-
+echo "<pre>";
 echo "Shop Domain:  " . $shop_domain . "\n";
 echo "Shop Access Token:  " . $shop_access_token;
-
+echo "</pre>";
 
 
 // Initialize the Shopify client
